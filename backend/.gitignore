@@ -3,3 +3,4 @@ node_modules/
 
 # Other entries...
 notes.js
+.env
