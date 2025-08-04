@@ -1,7 +1,8 @@
 const mongoose = require('mongoose');
+require('dotenv').config();
 
 // Define the MongoDB connection URL
-const MONGO_URI = 'mongodb+srv://satyamgarg1672001:mxansIYB8DPqorPv@restorant23.bf06ld7.mongodb.net/' // Replace 'mydatabase' with your database name
+const MONGO_URI = process.env.MONGODB_URI// Replace 'mydatabase' with your database name
 
 // set up MongoDB connection
 mongoose.connect(MONGO_URI, {
